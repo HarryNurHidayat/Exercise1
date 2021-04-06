@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CardView.Light">
+
+        <SearchView
+            android:id="@+id/PEC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:iconifiedByDefault="false"
+            android:queryHint="Masukkan Kata Pencarian">
+
+            <requestFocus />
+        </SearchView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:textSize="15pt"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/Dk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Dk" />
+
+    <ListView
+        android:id="@+id/Lk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:divider="@drawable/background2"
+        android:dividerHeight="3dp" />
+</LinearLayout>
